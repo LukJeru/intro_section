@@ -56,3 +56,36 @@ li a:hover{
 #registerLink:hover{
   border-color: var(--black);
 }
+
+/*main*/
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 4rem;
+  width: 85%;
+  margin: 2rem auto;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.leftMain{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+p{
+  font-size: 1.2rem;
+  color: var(--gray);
+  line-height: 2rem;
+  text-align:justify;
+}
+
+#hero{
+  width: 30rem;
+}

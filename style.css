@@ -1,4 +1,58 @@
 body {
   font-size: 18px;
   font-family: "Epilogue";
+  width: 100%;
+  color: var(--black);
+}
+
+/*colors*/
+:root {
+  --white: hsl(0, 0%, 98%);
+  --gray: hsl(0, 0%, 41%);
+  --black: hsl(0, 0%, 8%);
+}
+
+/*navbar*/
+
+nav {
+  margin: 2rem;
+  width: 95%;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+nav ul{
+  margin: 0;
+  display: flex;
+  list-style: none;
+}
+
+li a{
+  margin: 1rem;
+  text-decoration: none;
+  color: var(--gray);
+}
+
+li a:hover{
+  color: var(--black);
+}
+
+.leftNav{
+  display:inline-flex;
+  justify-content: space-between;
+}
+
+.rightNav{
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+#registerLink {
+  border: 2px solid var(--gray);
+  padding: 1rem;
+  border-radius: 1.2rem;
+}
+
+#registerLink:hover{
+  border-color: var(--black);
 }

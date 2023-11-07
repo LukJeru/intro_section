@@ -114,3 +114,11 @@ p{
 .customerGallery img{
   object-fit: contain;
 }
+
+footer {
+  display: inline-flex;
+  width: 95%;
+  justify-content: right;
+  align-items: center;
+  margin-top: 2rem;
+}

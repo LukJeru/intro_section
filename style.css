@@ -52,10 +52,12 @@ a:hover{
   border: 2px solid var(--gray);
   padding: 1rem;
   border-radius: 1.2rem;
+  color: var(--gray);
 }
 
 .button:hover{
   border-color: var(--black);
+  color: var(--black);
 }
 
 /*main*/
@@ -103,6 +105,10 @@ p{
   bottom: 2rem;
 }
 
+.leftMain .button a:hover{
+  color: var(--black);
+}
+
 .customerGallery {
   display: inline-flex;
   width: 100%;
@@ -120,5 +126,6 @@ footer {
   width: 95%;
   justify-content: right;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 5rem;
+  font-size: .8rem;
 }

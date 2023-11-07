@@ -28,13 +28,26 @@ nav ul{
   list-style: none;
 }
 
-a{
+li{
   margin: 1rem;
+}
+
+li a{
   text-decoration: none;
   color: var(--gray);
 }
 
 a:hover{
+  color: var(--black);
+}
+
+li img{
+  position: relative;
+  bottom: .2rem;
+  left: .3rem;
+}
+
+li img:hover{
   color: var(--black);
 }
 
@@ -59,6 +72,41 @@ a:hover{
   border-color: var(--black);
   color: var(--black);
 }
+
+/*Pop Ups*/
+#featurePopUp{
+  position: absolute;
+  left: 8rem;
+  top: 5rem;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 1.5rem;
+  box-shadow: var(--black) 2px 2px;
+  background-color: var(--white);
+}
+
+#featurePopUp ul{
+  list-style: none;
+}
+
+
+#companyPopUp{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 1.5rem;
+  box-shadow: var(--black) 2px 2px;
+  background-color: var(--white);
+}
+
+#companyPopUp ul{
+  list-style: none;
+}
+
+
+
 
 /*main*/
 main {
@@ -117,7 +165,7 @@ p{
   top: 1rem;
 }
 
-.customerGallery img{
+img{
   object-fit: contain;
 }
 

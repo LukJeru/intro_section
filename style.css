@@ -3,6 +3,7 @@ body {
   font-family: "Epilogue";
   width: 100%;
   color: var(--black);
+  background-color: var(--white);
 }
 
 /*colors*/
@@ -27,13 +28,13 @@ nav ul{
   list-style: none;
 }
 
-li a{
+a{
   margin: 1rem;
   text-decoration: none;
   color: var(--gray);
 }
 
-li a:hover{
+a:hover{
   color: var(--black);
 }
 
@@ -47,13 +48,13 @@ li a:hover{
   justify-content: space-between;
 }
 
-#registerLink {
+.button {
   border: 2px solid var(--gray);
   padding: 1rem;
   border-radius: 1.2rem;
 }
 
-#registerLink:hover{
+.button:hover{
   border-color: var(--black);
 }
 
@@ -64,15 +65,15 @@ main {
   justify-content: space-around;
   gap: 4rem;
   width: 85%;
-  margin: 2rem auto;
+  margin: 1rem auto;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 .leftMain{
-  width: 40%;
+  width: 45%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -84,8 +85,32 @@ p{
   color: var(--gray);
   line-height: 2rem;
   text-align:justify;
+  position: relative;
+  bottom: 3rem;
+  width: 80%;
 }
 
 #hero{
   width: 30rem;
+}
+
+.leftMain .button{
+  width: 35%;
+  background-color: var(--white);
+  font-weight: 700;
+  font-size: 1.2rem;
+  position: relative;
+  bottom: 2rem;
+}
+
+.customerGallery {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+  top: 1rem;
+}
+
+.customerGallery img{
+  object-fit: contain;
 }

@@ -28,8 +28,8 @@ nav ul{
   list-style: none;
 }
 
-li{
-  margin: 1rem;
+nav li{
+  margin: 1.5rem;
 }
 
 li a{
@@ -76,33 +76,58 @@ li img:hover{
 /*Pop Ups*/
 #featurePopUp{
   position: absolute;
-  left: 8rem;
-  top: 5rem;
+  left: 6.5rem;
+  top: 6rem;
   display: flex;
   flex-direction: column;
   border: none;
-  border-radius: 1.5rem;
-  box-shadow: var(--black) 2px 2px;
+  border-radius: .8rem;
+  box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
   background-color: var(--white);
+  visibility: hidden;
 }
 
 #featurePopUp ul{
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#featurePopUp div{
+  display: inline-flex;
+  position:relative;
+  right: 1rem;
+}
+
+#featurePopUp ul li{
+  margin: .5rem;
 }
 
 
 #companyPopUp{
   position: absolute;
+  left: 20.5rem;
+  top: 6rem;
   display: flex;
   flex-direction: column;
   border: none;
-  border-radius: 1.5rem;
-  box-shadow: var(--black) 2px 2px;
+  border-radius: .8rem;
+  box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
   background-color: var(--white);
+  width: 8rem;
+  height: 8rem;
+  visibility: hidden;
 }
 
 #companyPopUp ul{
   list-style: none;
+  position:relative;
+  right: 1rem;
+}
+
+#companyPopUp ul li{
+  margin-top: .7rem;
 }
 
 

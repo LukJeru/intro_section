@@ -75,10 +75,10 @@ li img:hover{
 
 /*Pop Ups*/
 #featurePopUp{
-  position: absolute;
-  left: 8.5rem;
-  top: 6rem;
   display: flex;
+  position: absolute;
+  top: 6rem;
+  left: 8rem;
   flex-direction: column;
   border: none;
   border-radius: .8rem;

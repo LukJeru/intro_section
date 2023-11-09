@@ -1,27 +1,35 @@
 const features = document.getElementById("features");
 const company = document.getElementById("company");
+const featurePop = document.getElementById("featurePopUp");
+const companyPop = document.getElementById("companyPopUp");
 
-features.addEventListener("mouseenter", popupFeature);
+features.addEventListener("mouseover", popupFeature);
+featurePop.addEventListener("mouseenter", popupFeature);
+featurePop.addEventListener("mouseleave", popinFeature);
 features.addEventListener("mouseleave", popinFeature);
 company.addEventListener("mouseenter", popupCompany);
 company.addEventListener("mouseleave", popinCompany);
+companyPop.addEventListener("mouseenter", popupCompany);
+companyPop.addEventListener("mouseleave", popinCompany);
+
+
 
 function popupFeature(event) {
-  document.getElementById("featurePopUp").style.visibility = "visible";
+  featurePop.style.visibility = "visible";
   document.getElementById("arrow1").src="/images/icon-arrow-up.svg";
 }
 
 function popinFeature(event) {
-  document.getElementById("featurePopUp").style.visibility = "";
+  featurePop.style.visibility = "";
   document.getElementById("arrow1").src="/images/icon-arrow-down.svg";
 }
 
 function popupCompany(event) {
-  document.getElementById("companyPopUp").style.visibility = "visible";
+  companyPop.style.visibility = "visible";
   document.getElementById("arrow2").src="/images/icon-arrow-up.svg";
 }
 
 function popinCompany(event) {
-  document.getElementById("companyPopUp").style.visibility = "";
+  companyPop.style.visibility = "";
   document.getElementById("arrow2").src="/images/icon-arrow-down.svg";
 }

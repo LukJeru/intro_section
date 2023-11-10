@@ -37,6 +37,14 @@ li a{
   color: var(--gray);
 }
 
+#features{
+  padding-bottom: 1rem;
+}
+
+#company{
+  padding-bottom: 1rem;
+}
+
 a:hover{
   color: var(--black);
 }
